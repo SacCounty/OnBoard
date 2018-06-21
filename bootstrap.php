@@ -27,7 +27,7 @@ define('SITE_HOME', !empty($_SERVER['SITE_HOME']) ? $_SERVER['SITE_HOME'] : __DI
 $loader = require APPLICATION_HOME.'/vendor/autoload.php';
 $loader->addPsr4('Site\\', SITE_HOME);
 
-include SITE_HOME.'/site_config.inc';
+include SITE_HOME.'/config/site_config.inc';
 #include APPLICATION_HOME.'/routes.inc';
 include APPLICATION_HOME.'/access_control.inc';
 
